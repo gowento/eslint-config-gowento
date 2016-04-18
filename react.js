@@ -1,8 +1,7 @@
 module.exports = {
   extends: [
-    './index.js',
     'airbnb',
+    './index.js',
   ],
   plugins: ['react'],
-  rules: {},
 };
