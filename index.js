@@ -34,5 +34,8 @@ module.exports = {
       properties: 'never',
       exceptions: ['_', 't'], // Allow lodash and ava
     }],
+    'no-underscore-dangle': [2, {
+      allow: ['_id', '__v'], // Allow MongoDB special fields
+    }],
   },
 };
