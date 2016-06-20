@@ -51,7 +51,7 @@
     "eslint-plugin-react": "5.2.2"
   },
   "devDependencies": {
-    "eslint": "2.13.0",
+    "eslint": "2.13.1",
     "eslint-find-rules": "1.10.0"
   }
 }
