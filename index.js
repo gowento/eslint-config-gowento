@@ -25,6 +25,7 @@ module.exports = {
     'lodash/prefer-lodash-method': 0,
     'consistent-return': 0,
     'no-console': 0,
+    'arrow-parens': 0,
     'max-len': 0,
     'no-param-reassign': [2, {
       props: false,
