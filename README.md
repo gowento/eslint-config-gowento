@@ -11,6 +11,7 @@
 ## Features
 
 - Extends `eslint-config-airbnb`
+- Includes `babel-eslint`
 - Includes the following plugins:
     + `eslint-plugin-lodash`
     + `eslint-plugin-react`
@@ -49,7 +50,7 @@ Update your `.eslintrc` (works with `package.json` too):
 Currently, due to an [issue with ESLint](https://github.com/eslint/eslint/issues/3458), you might need to install dependencies manually:
 
 ```sh
-npm install --save-dev eslint-config-airbnb eslint-plugin-lodash eslint-plugin-react eslint-plugin-ava eslint-plugin-jsx-a11y eslint-plugin-import
+npm install --save-dev eslint-config-airbnb babel-eslint eslint-plugin-lodash eslint-plugin-react eslint-plugin-ava eslint-plugin-jsx-a11y eslint-plugin-import
 ```
 
 ## License
