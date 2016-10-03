@@ -32,7 +32,6 @@
   "license": "MIT",
   "homepage": "https://github.com/gowento/eslint-config-gowento#readme",
   "peerDependencies": {
-    "babel-eslint": "*",
     "eslint": "*",
     "eslint-config-airbnb": "*",
     "eslint-plugin-ava": "*",
@@ -43,7 +42,6 @@
     "eslint-find-rules": "*"
   },
   "dependencies": {
-    "babel-eslint": "*",
     "eslint-config-airbnb": "*",
     "eslint-plugin-ava": "*",
     "eslint-plugin-import": "*",
