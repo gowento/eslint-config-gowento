@@ -23,6 +23,7 @@ module.exports = {
   },
   rules: {
     'lodash/prefer-lodash-method': 0,
+    'lodash/chaining': [2, 'always'],
     'consistent-return': 0,
     'no-console': 0,
     'arrow-parens': 0,
@@ -36,7 +37,7 @@ module.exports = {
       exceptions: ['_', 't'], // Allow lodash and ava
     }],
     'no-underscore-dangle': [2, {
-      allow: ['_id', '__v'], // Allow MongoDB special fields
+      allow: ['_id', '__v', '_collection'], // Allow MongoDB special fields & agenda props
     }],
   },
 };
