@@ -28,6 +28,7 @@ module.exports = {
     'no-console': 0,
     'arrow-parens': 0,
     'max-len': 0,
+    'comma-dangle': [2, 'always-multiline'],
     'no-param-reassign': [2, {
       props: false,
     }],
