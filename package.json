@@ -31,28 +31,16 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/gowento/eslint-config-gowento#readme",
-  "peerDependencies": {
-    "babel-eslint": "*",
-    "eslint": "*",
-    "eslint-config-airbnb": "*",
-    "eslint-plugin-ava": "*",
-    "eslint-plugin-import": "*",
-    "eslint-plugin-jsx-a11y": "*",
-    "eslint-plugin-lodash": "*",
-    "eslint-plugin-react": "*",
-    "eslint-find-rules": "*"
-  },
-  "dependencies": {
-    "babel-eslint": "*",
-    "eslint-config-airbnb": "*",
-    "eslint-plugin-ava": "*",
-    "eslint-plugin-import": "*",
-    "eslint-plugin-jsx-a11y": "*",
-    "eslint-plugin-lodash": "*",
-    "eslint-plugin-react": "*"
-  },
+  "peerDependencies": {},
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "*",
-    "eslint-find-rules": "*"
+    "babel-eslint": "*",
+    "eslint": "3.9.1",
+    "eslint-config-airbnb": "13.0.0",
+    "eslint-plugin-ava": "*",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-lodash": "*",
+    "eslint-plugin-react": "6.6.0"
   }
 }
