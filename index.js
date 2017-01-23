@@ -23,7 +23,7 @@ module.exports = {
   },
   rules: {
     'lodash/prefer-lodash-method': 0,
-    'lodash/import-scope': [2, 'member'],
+    'lodash/import-scope': 0,
     'lodash/chaining': [2, 'always'],
     'consistent-return': 0,
     'no-console': 0,
