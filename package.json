@@ -34,12 +34,12 @@
   "dependencies": {
     "eslint-config-airbnb": "15.0.1",
     "eslint-plugin-ava": "4.2.0",
-    "eslint-plugin-lodash": "2.4.2"
-  },
-  "devDependencies": {
-    "eslint": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-lodash": "2.4.2",
     "eslint-plugin-react": "*"
+  },
+  "devDependencies": {
+    "eslint": "*"
   }
 }

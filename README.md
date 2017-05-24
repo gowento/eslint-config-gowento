@@ -11,7 +11,6 @@
 ## Features
 
 - Extends `eslint-config-airbnb`
-- Includes `babel-eslint`
 - Includes the following plugins:
     + `eslint-plugin-lodash`
     + `eslint-plugin-react`
@@ -25,23 +24,13 @@ npm i -D eslint eslint-config-gowento
 
 ## Usage
 
-#### Base configuration (everything except React)
+### Configuration
 
 Update your `.eslintrc` (works with `package.json` too):
 
 ```json
 {
     "extends": "gowento"
-}
-```
-
-#### Base + React configuration
-
-Update your `.eslintrc` (works with `package.json` too):
-
-```json
-{
-    "extends": "gowento/react"
 }
 ```
 
