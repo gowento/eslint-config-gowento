@@ -10,10 +10,10 @@
 
 ## Features
 
-- Extends `eslint-config-airbnb`
-- Includes the following plugins:
+- Runs `babel-eslint`, allowing Gowento projects to use customized Babel configuration
+- Extends `eslint-config-airbnb`, which provides `eslint-plugin-react`
+- Includes plugins for standard Gowento tooling:
     + `eslint-plugin-lodash`
-    + `eslint-plugin-react`
     + `eslint-plugin-ava`
 
 ## Install
@@ -34,9 +34,9 @@ Update your `.eslintrc` (works with `package.json` too):
 }
 ```
 
-## Known Issues
+## Maintenance
 
-Currently, due to an [issue with ESLint](https://github.com/eslint/eslint/issues/3458), ESLint's peer dependencies should be manually installed/updated as described [here](https://www.npmjs.com/package/eslint-config-airbnb#eslint-config-airbnb-1).
+Dependencies versioned using `"*"` represent peer dependencies of [eslint-config-airbnb](https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/package.json).
 
 ## License
 
