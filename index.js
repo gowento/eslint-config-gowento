@@ -4,9 +4,8 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  parser: 'babel-eslint',
   extends: [
-    'airbnb/base',
+    'airbnb',
     'plugin:ava/recommended',
     'plugin:lodash/recommended',
   ],
@@ -14,13 +13,6 @@ module.exports = {
     'ava',
     'lodash',
   ],
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-    },
-  },
   rules: {
     'lodash/prefer-lodash-method': 0,
     'lodash/import-scope': 0,
