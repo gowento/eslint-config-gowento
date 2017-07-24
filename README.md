@@ -36,7 +36,7 @@ Update your `.eslintrc` (works with `package.json` too):
 
 ## Maintenance
 
-Dependencies versioned using `"*"` represent peer dependencies of [eslint-config-airbnb](https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/package.json).
+Package dependencies must satisfy peer dependencies of [eslint-config-airbnb](https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/package.json), `eslint` remaining both a development and a peer dependency.
 
 ## License
 
