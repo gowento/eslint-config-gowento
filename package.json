@@ -15,8 +15,7 @@
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "postpublish": "git push origin master --follow-tags",
-    "toc": "doctoc --github --title \"# Changelog\" CHANGELOG.md"
+    "postpublish": "git push origin master --follow-tags"
   },
   "keywords": [
     "eslint",
