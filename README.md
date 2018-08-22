@@ -10,7 +10,6 @@
 
 ## Features
 
-- Runs `babel-eslint`, allowing Gowento projects to use customized Babel configuration
 - Extends `eslint-config-airbnb`, which provides `eslint-plugin-react`
 - Includes plugins for standard Gowento tooling:
     + `eslint-plugin-lodash`
