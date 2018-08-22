@@ -10,10 +10,6 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --cache",
-    "deploy": "git pull --rebase origin master && git push origin master",
-    "patch": "yarn version patch && yarn publish",
-    "minor": "yarn version minor && yarn publish",
-    "major": "yarn version major && yarn publish",
     "postpublish": "git push origin master --follow-tags"
   },
   "keywords": [
