@@ -11,9 +11,9 @@
   "scripts": {
     "lint": "eslint . --cache",
     "deploy": "git pull --rebase origin master && git push origin master",
-    "patch": "npm version patch && npm publish",
-    "minor": "npm version minor && npm publish",
-    "major": "npm version major && npm publish",
+    "patch": "yarn version patch && yarn publish",
+    "minor": "yarn version minor && yarn publish",
+    "major": "yarn version major && yarn publish",
     "postpublish": "git push origin master --follow-tags"
   },
   "keywords": [
