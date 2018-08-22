@@ -9,7 +9,6 @@
   ],
   "main": "index.js",
   "scripts": {
-    "find-unused-rules": "eslint-find-rules -u index.js",
     "lint": "eslint . --cache",
     "deploy": "git pull --rebase origin master && git push origin master",
     "patch": "npm version patch && npm publish",
