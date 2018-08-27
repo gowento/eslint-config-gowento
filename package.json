@@ -17,7 +17,8 @@
     "eslint-config"
   ],
   "files": [
-    "index.js"
+    "index.js",
+    "prettier.config.js"
   ],
   "repository": {
     "type": "git",
