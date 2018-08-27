@@ -18,11 +18,15 @@ module.exports = {
     // Recommended Lodash-specific linting rules for ESLint.
     // https://github.com/wix/eslint-plugin-lodash#recommended-configuration
     'plugin:lodash/recommended',
+    // Turn off ESLint's formatting rules, turn on Prettier recommended rules
+    // https://prettier.io/docs/en/eslint.html#why-not-both
+    'plugin:prettier/recommended',
   ],
 
   plugins: [
     'ava',
     'lodash',
+    'prettier',
   ],
 
   rules: {
