@@ -19,8 +19,9 @@ module.exports = {
     // https://github.com/wix/eslint-plugin-lodash#recommended-configuration
     'plugin:lodash/recommended',
     // Turn off ESLint's formatting rules, turn on Prettier recommended rules
-    // https://prettier.io/docs/en/eslint.html#why-not-both
+    // https://github.com/prettier/eslint-plugin-prettier#recommended-configuration
     'plugin:prettier/recommended',
+    'prettier/react',
   ],
 
   plugins: [
@@ -30,32 +31,40 @@ module.exports = {
   ],
 
   rules: {
-    'lodash/prefer-lodash-method': 0,
-    'lodash/import-scope': 0,
-    'lodash/chaining': [2, 'always'],
-    'consistent-return': 0,
-    'arrow-parens': 0,
-    'max-len': 0,
-    'comma-dangle': [2, 'always-multiline'],
-    'object-curly-newline': 0,
-    'no-await-in-loop': 0,
-    'function-paren-newline': 0,
-    'no-restricted-syntax': [
-      'error',
-      'ForInStatement',
-      'LabeledStatement',
-      'WithStatement',
-    ],
-    'no-param-reassign': [2, {
-      props: false,
-    }],
-    'id-length': [2, {
+    // Do not require `return` statements to consistently specify values
+    // https://eslint.org/docs/rules/consistent-return
+    'consistent-return': 'off',
+
+    // Import the full Lodash module (it is expected that `babel-plugin-lodash` is used)
+    // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/import-scope.md
+    'lodash/import-scope': ['error', 'full'],
+
+    // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/prefer-lodash-chain.md
+    'lodash/prefer-lodash-chain': 'off',
+
+    // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/prefer-lodash-method.md
+    'lodash/prefer-lodash-method': 'off',
+
+    // Enforce minimum identifier length of 2 characters, except Lodash and AVA
+    // https://eslint.org/docs/rules/id-length
+    'id-length': ['error', {
       min: 2,
       properties: 'never',
-      exceptions: ['_', 't'], // Allow lodash and ava
+      exceptions: ['_', 't'],
     }],
-    'no-underscore-dangle': [2, {
-      allow: ['_id', '__v', '_collection'], // Allow MongoDB special fields & agenda props
+
+    // Disallow Reassignment of Function Parameters, except props of parameter objects
+    // https://eslint.org/docs/rules/no-param-reassign
+    'no-param-reassign': ['error', {
+      props: false,
     }],
+
+    // Disallow dangling underscores in identifiers, except MongoDB special fields and Agenda props
+    // https://eslint.org/docs/rules/no-underscore-dangle
+    'no-underscore-dangle': ['error', {
+      allow: ['_collection', '_id', '__v'],
+    }],
+
+    'prettier/prettier': ['error', require('./prettier.config')],
   },
 };
