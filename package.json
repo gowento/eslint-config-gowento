@@ -10,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --cache",
-    "postpublish": "git push origin master --follow-tags"
+    "release": "np"
   },
   "keywords": ["eslint", "eslint-config"],
   "files": ["index.js", "prettier.config.js"],
@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "eslint": "5.4.0",
+    "np": "3.0.4",
     "prettier": "1.14.2"
   },
   "peerDependencies": {
