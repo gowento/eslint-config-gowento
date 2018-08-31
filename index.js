@@ -1,3 +1,5 @@
+const prettierConfig = require('./prettier.config');
+
 module.exports = {
   parser: 'babel-eslint',
 
@@ -24,11 +26,7 @@ module.exports = {
     'prettier/react',
   ],
 
-  plugins: [
-    'ava',
-    'lodash',
-    'prettier',
-  ],
+  plugins: ['ava', 'lodash', 'prettier'],
 
   rules: {
     // Do not require `return` statements to consistently specify values
@@ -47,24 +45,33 @@ module.exports = {
 
     // Enforce minimum identifier length of 2 characters, except Lodash and AVA
     // https://eslint.org/docs/rules/id-length
-    'id-length': ['error', {
-      min: 2,
-      properties: 'never',
-      exceptions: ['_', 't'],
-    }],
+    'id-length': [
+      'error',
+      {
+        min: 2,
+        properties: 'never',
+        exceptions: ['_', 't'],
+      },
+    ],
 
     // Disallow Reassignment of Function Parameters, except props of parameter objects
     // https://eslint.org/docs/rules/no-param-reassign
-    'no-param-reassign': ['error', {
-      props: false,
-    }],
+    'no-param-reassign': [
+      'error',
+      {
+        props: false,
+      },
+    ],
 
     // Disallow dangling underscores in identifiers, except MongoDB special fields and Agenda props
     // https://eslint.org/docs/rules/no-underscore-dangle
-    'no-underscore-dangle': ['error', {
-      allow: ['_collection', '_id', '__v'],
-    }],
+    'no-underscore-dangle': [
+      'error',
+      {
+        allow: ['_collection', '_id', '__v'],
+      },
+    ],
 
-    'prettier/prettier': ['error', require('./prettier.config')],
+    'prettier/prettier': ['error', prettierConfig],
   },
 };

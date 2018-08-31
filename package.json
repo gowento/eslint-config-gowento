@@ -12,14 +12,8 @@
     "lint": "eslint . --cache",
     "postpublish": "git push origin master --follow-tags"
   },
-  "keywords": [
-    "eslint",
-    "eslint-config"
-  ],
-  "files": [
-    "index.js",
-    "prettier.config.js"
-  ],
+  "keywords": ["eslint", "eslint-config"],
+  "files": ["index.js", "prettier.config.js"],
   "repository": {
     "type": "git",
     "url": "git@github.com:gowento/eslint-config-gowento.git"
