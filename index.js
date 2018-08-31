@@ -26,6 +26,13 @@ module.exports = {
     'prettier/react',
   ],
 
+  settings: {
+    react: {
+      pragma: 'React',
+      version: '16.3',
+    },
+  },
+
   plugins: ['ava', 'lodash', 'prettier'],
 
   rules: {
