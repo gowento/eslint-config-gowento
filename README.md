@@ -10,32 +10,42 @@
 
 ## Features
 
-- Extends `eslint-config-airbnb`, which provides `eslint-plugin-react`
-- Includes plugins for standard Gowento tooling:
-    + `eslint-plugin-lodash`
-    + `eslint-plugin-ava`
+- Extends `eslint-config-airbnb` (which provides `eslint-plugin-react`)
+- Includes plugins and recommended settings for standard Gowento tooling:
+  - `eslint-plugin-lodash`
+  - `eslint-plugin-ava`
+  - `eslint-plugin-prettier`
 
 ## Install
 
 ```sh
-npm i -D eslint eslint-config-gowento
+# Using npm
+npm install --save-dev eslint eslint-config-gowento
+```
+
+```sh
+# Using yarn
+yarn add eslint eslint-config-gowento --dev
 ```
 
 ## Usage
 
 ### Configuration
 
-Update your `.eslintrc` (works with `package.json` too):
+Configure ESLint to extend the standard Gowento configuration, using the recommended `.eslintrc.js`:
 
-```json
-{
-    "extends": "gowento"
-}
+```js
+module.exports = {
+  extends: 'gowento',
+};
 ```
 
-## Maintenance
+Configure Prettier to the standard Gowento configuration, using the recommended `prettier.config.js`:
 
-Package dependencies must satisfy peer dependencies of [eslint-config-airbnb](https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/package.json), `eslint` remaining both a development and a peer dependency.
+```js
+/* eslint import/no-extraneous-dependencies: ["error", { "devDependencies": true }] */
+module.exports = require('eslint-config-gowento/prettier.config');
+```
 
 ## License
 
@@ -43,14 +53,10 @@ MIT © [Gowento](https://www.gowento.com)
 
 [npm-url]: https://npmjs.org/package/eslint-config-gowento
 [npm-image]: https://img.shields.io/npm/v/eslint-config-gowento.svg?style=flat-square
-
 [travis-url]: https://travis-ci.org/gowento/eslint-config-gowento
 [travis-image]: https://img.shields.io/travis/gowento/eslint-config-gowento.svg?style=flat-square
-
 [coveralls-url]: https://coveralls.io/r/gowento/eslint-config-gowento
 [coveralls-image]: https://img.shields.io/coveralls/gowento/eslint-config-gowento.svg?style=flat-square
-
 [depstat-url]: https://david-dm.org/gowento/eslint-config-gowento
 [depstat-image]: https://david-dm.org/gowento/eslint-config-gowento.svg?style=flat-square
-
 [download-badge]: http://img.shields.io/npm/dm/eslint-config-gowento.svg?style=flat-square
