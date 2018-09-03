@@ -9,7 +9,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --cache",
+    "lint": "eslint .",
     "release": "np"
   },
   "keywords": [
