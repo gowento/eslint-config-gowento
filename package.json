@@ -14,7 +14,12 @@
   },
   "keywords": [
     "eslint",
-    "eslint-config"
+    "eslint-config",
+    "prettier",
+    "standard",
+    "react",
+    "lodash",
+    "ava"
   ],
   "files": [
     "index.js",
