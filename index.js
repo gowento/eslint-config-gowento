@@ -44,8 +44,8 @@ module.exports = {
     // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/import-scope.md
     'lodash/import-scope': ['error', 'full'],
 
-    // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/prefer-lodash-chain.md
-    'lodash/prefer-lodash-chain': 'off',
+    // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/chaining.md
+    'lodash/chaining': ['error', 'always', 3],
 
     // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/prefer-lodash-method.md
     'lodash/prefer-lodash-method': 'off',
