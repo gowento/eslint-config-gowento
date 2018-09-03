@@ -30,7 +30,7 @@
     "url": "git@github.com:gowento/eslint-config-gowento.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/gowento/eslint-config-gowento#readme",
+  "homepage": "https://github.com/gowento/eslint-config-gowento",
   "dependencies": {
     "babel-eslint": "9.0.0",
     "eslint-config-airbnb": "17.1.0",
