@@ -23,6 +23,9 @@ module.exports = {
     // Turn off ESLint's formatting rules, turn on Prettier recommended rules
     // https://github.com/prettier/eslint-plugin-prettier#recommended-configuration
     'plugin:prettier/recommended',
+    // Enforce best practices for JavaScript promises
+    // https://github.com/xjamundx/eslint-plugin-promise#rules
+    'plugin:promise/recommended',
     'prettier/react',
   ],
 
@@ -33,7 +36,7 @@ module.exports = {
     },
   },
 
-  plugins: ['ava', 'lodash', 'prettier'],
+  plugins: ['ava', 'lodash', 'prettier', 'promise'],
 
   rules: {
     // Do not require `return` statements to consistently specify values
