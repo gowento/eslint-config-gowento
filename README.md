@@ -9,10 +9,11 @@ Standard ESLint config used in Gowento projects.
 ## Features
 
 - Extends `eslint-config-airbnb` (which provides `eslint-plugin-react`)
-- Includes plugins and recommended settings for standard Gowento tooling:
-  - `eslint-plugin-lodash`
+- Provides additional rules and recommended settings for language features and standard Gowento tooling through plugins:
   - `eslint-plugin-ava`
+  - `eslint-plugin-lodash`
   - `eslint-plugin-prettier`
+  - `eslint-plugin-promise`
 
 ## Install
 
