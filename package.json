@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "eslint": "5.13.0",
+    "eslint-plugin-react-hooks": "1.0.1",
     "np": "4.0.2",
     "prettier": "1.16.4"
   },

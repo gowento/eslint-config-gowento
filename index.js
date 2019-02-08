@@ -37,7 +37,7 @@ module.exports = {
     },
   },
 
-  plugins: ['ava', 'lodash', 'prettier', 'promise'],
+  plugins: ['ava', 'lodash', 'prettier', 'promise', 'react-hooks'],
 
   rules: {
     // Do not require `return` statements to consistently specify values
@@ -82,6 +82,10 @@ module.exports = {
         allow: ['_collection', '_id', '__v'],
       },
     ],
+
+    // Enforce rules of React Hooks
+    // https://reactjs.org/docs/hooks-rules.html
+    'react-hooks/rules-of-hooks': 'error',
 
     'prettier/prettier': ['error', prettierConfig],
   },
