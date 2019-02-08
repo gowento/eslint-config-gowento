@@ -20,12 +20,13 @@ module.exports = {
     // Recommended Lodash-specific linting rules for ESLint.
     // https://github.com/wix/eslint-plugin-lodash#recommended-configuration
     'plugin:lodash/recommended',
-    // Turn off ESLint's formatting rules, turn on Prettier recommended rules
-    // https://github.com/prettier/eslint-plugin-prettier#recommended-configuration
-    'plugin:prettier/recommended',
     // Enforce best practices for JavaScript promises
     // https://github.com/xjamundx/eslint-plugin-promise#rules
     'plugin:promise/recommended',
+
+    // Turn off ESLint's formatting rules, turn on Prettier recommended rules including React
+    // https://github.com/prettier/eslint-plugin-prettier#recommended-configuration
+    'plugin:prettier/recommended',
     'prettier/react',
   ],
 
