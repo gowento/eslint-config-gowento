@@ -86,6 +86,7 @@ module.exports = {
     // Enforce rules of React Hooks
     // https://reactjs.org/docs/hooks-rules.html
     'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
 
     'prettier/prettier': ['error', prettierConfig],
   },
