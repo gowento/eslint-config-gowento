@@ -11,9 +11,12 @@ module.exports = {
   },
 
   extends: [
-    // Airbnb ESLint rules, including ECMAScript 6+ and React.
+    // Airbnb ESLint configuration
     // https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb#eslint-config-airbnb-1
     'airbnb',
+    // Airbnb rules include ECMAScript 6+ and React, and supersede the ESLint preset,
+    // so we do not need to extend "eslint:recommended" nor "plugin:react/recommended"
+
     // Enforce ESLint good practices for AVA.
     // https://github.com/avajs/eslint-plugin-ava#recommended-config
     'plugin:ava/recommended',
