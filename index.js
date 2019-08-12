@@ -79,6 +79,10 @@ module.exports = {
       },
     ],
 
+    // Enforce standard form for React fragments (as opposed to shorthand form `<>` / `</>`)
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md
+    'react/jsx-fragments': ['error', 'element'],
+
     // Enforce rules of React Hooks
     // https://reactjs.org/docs/hooks-rules.html
     'react-hooks/rules-of-hooks': 'error',
