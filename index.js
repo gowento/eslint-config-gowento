@@ -40,17 +40,7 @@ module.exports = {
     // https://eslint.org/docs/rules/consistent-return
     'consistent-return': 'off',
 
-    // Import the full Lodash module (it is expected that `babel-plugin-lodash` is used)
-    // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/import-scope.md
-    'lodash/import-scope': ['error', 'full'],
-
-    // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/chaining.md
-    'lodash/chaining': ['error', 'always', 3],
-
-    // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/prefer-lodash-method.md
-    'lodash/prefer-lodash-method': 'off',
-
-    // Enforce minimum identifier length of 2 characters, except Lodash and AVA
+    // Enforce minimum identifier length of 2 characters, except Lodash’s `_` and AVA’s `t`
     // https://eslint.org/docs/rules/id-length
     'id-length': [
       'error',
@@ -61,7 +51,16 @@ module.exports = {
       },
     ],
 
-    // Disallow Reassignment of Function Parameters, except props of parameter objects
+    // Disallow dangling underscores in identifiers, except MongoDB’s `_id` and Mongoose’s `__v`
+    // https://eslint.org/docs/rules/no-underscore-dangle
+    'no-underscore-dangle': [
+      'error',
+      {
+        allow: ['_id', '__v'],
+      },
+    ],
+
+    // Disallow reassignment of all function parameters
     // https://eslint.org/docs/rules/no-param-reassign
     'no-param-reassign': [
       'error',
@@ -70,14 +69,21 @@ module.exports = {
       },
     ],
 
-    // Disallow dangling underscores in identifiers, except MongoDB special fields and Agenda props
-    // https://eslint.org/docs/rules/no-underscore-dangle
-    'no-underscore-dangle': [
-      'error',
-      {
-        allow: ['_collection', '_id', '__v'],
-      },
-    ],
+    // Enforce usage of chaining over 3 nested Lodash functions
+    // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/chaining.md
+    'lodash/chaining': ['error', 'always', 3],
+
+    // Import the full Lodash module (it is expected that `babel-plugin-lodash` is used)
+    // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/import-scope.md
+    'lodash/import-scope': ['error', 'full'],
+
+    // Do not enforce usage of Lodash implementation over native functions like `forEach` and `map`
+    // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/prefer-lodash-method.md
+    'lodash/prefer-lodash-method': 'off',
+
+    // Enforce Gowento Prettier config described in `./prettier.config.js`
+    // https://github.com/prettier/eslint-plugin-prettier#installation
+    'prettier/prettier': ['error', prettierConfig],
 
     // Enforce standard form for React fragments (as opposed to shorthand form `<>` / `</>`)
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md
@@ -87,7 +93,5 @@ module.exports = {
     // https://reactjs.org/docs/hooks-rules.html
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-
-    'prettier/prettier': ['error', prettierConfig],
   },
 };
