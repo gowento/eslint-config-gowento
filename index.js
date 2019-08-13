@@ -89,6 +89,10 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md
     'react/jsx-fragments': ['error', 'element'],
 
+    // Enforce that standard React static properties in ES2015 class components should be declared as property assignments
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/static-property-placement.md
+    'react/static-property-placement': ['error', 'property assignment'],
+
     // Enforce rules of React Hooks
     // https://reactjs.org/docs/hooks-rules.html
     'react-hooks/rules-of-hooks': 'error',
