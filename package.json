@@ -32,20 +32,20 @@
   "license": "MIT",
   "homepage": "https://github.com/gowento/eslint-config-gowento",
   "dependencies": {
-    "babel-eslint": "10.0.2",
-    "eslint-config-airbnb": "18.0.0",
-    "eslint-config-prettier": "6.0.0",
-    "eslint-plugin-ava": "7.1.0",
+    "babel-eslint": "10.0.3",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "6.1.0",
+    "eslint-plugin-ava": "8.0.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-lodash": "6.0.0",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-react": "7.14.3",
-    "eslint-plugin-react-hooks": "1.7.0"
+    "eslint-plugin-react-hooks": "2.0.1"
   },
   "devDependencies": {
-    "eslint": "6.1.0",
+    "eslint": "6.2.2",
     "np": "5.0.3",
     "prettier": "1.18.2"
   },
