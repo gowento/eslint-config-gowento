@@ -10,7 +10,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "release": "np"
+    "release": "np",
+    "test": "echo \"No test were written\" && exit 0"
   },
   "keywords": [
     "eslint",
