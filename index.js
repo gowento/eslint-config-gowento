@@ -33,7 +33,7 @@ module.exports = {
     'prettier/react',
   ],
 
-  plugins: ['ava', 'lodash', 'prettier', 'promise', 'react-hooks'],
+  plugins: ['ava', 'lodash', 'prettier', 'promise', 'react-hooks', 'filenames'],
 
   rules: {
     // Do not require `return` statements to consistently specify values
@@ -69,6 +69,11 @@ module.exports = {
       },
     ],
 
+    // Allows await in "for in" loops (https://github.com/airbnb/javascript/issues/851)
+    'no-await-in-loop': 'off',
+    'no-restricted-syntax': ['error', 'ForInStatement'],
+    'import/no-cycle': 'off',
+
     // Enforce usage of chaining over 3 nested Lodash functions
     // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/chaining.md
     'lodash/chaining': ['error', 'always', 3],
@@ -97,5 +102,10 @@ module.exports = {
     // https://reactjs.org/docs/hooks-rules.html
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+
+    // Enforce rules of Filenames
+    // https://github.com/selaux/eslint-plugin-filenames
+    'filenames/match-regex': 2,
+    'filenames/match-exported': 2,
   },
 };
