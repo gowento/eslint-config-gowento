@@ -33,7 +33,7 @@ module.exports = {
     'prettier/react',
   ],
 
-  plugins: ['ava', 'lodash', 'prettier', 'promise', 'react-hooks', 'filenames'],
+  plugins: ['ava', 'lodash', 'prettier', 'promise', 'react-hooks'],
 
   rules: {
     // Do not require `return` statements to consistently specify values
@@ -102,10 +102,5 @@ module.exports = {
     // https://reactjs.org/docs/hooks-rules.html
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-
-    // Enforce rules of Filenames
-    // https://github.com/selaux/eslint-plugin-filenames
-    'filenames/match-regex': 2,
-    'filenames/match-exported': 2,
   },
 };
