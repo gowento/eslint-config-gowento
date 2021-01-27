@@ -5,7 +5,8 @@
   "author": "Gowento <hackers@gowento.com>",
   "contributors": [
     "Loris Guignard <loris.guignard@gmail.com>",
-    "Eric Redon <eric.redon@coox.org>"
+    "Eric Redon <eric.redon@coox.org>",
+    "Romain Balaine <romain.balaine@gmail.com>"
   ],
   "main": "index.js",
   "scripts": {
@@ -35,19 +36,19 @@
   "dependencies": {
     "babel-eslint": "10.1.0",
     "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "7.0.0",
+    "eslint-config-prettier": "7.2.0",
     "eslint-plugin-ava": "11.0.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-lodash": "7.1.0",
-    "eslint-plugin-prettier": "3.2.0",
+    "eslint-plugin-prettier": "3.3.1",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react": "7.22.0",
     "eslint-plugin-react-hooks": "4.2.0"
   },
   "devDependencies": {
-    "eslint": "7.15.0",
-    "np": "7.0.0",
+    "eslint": "7.18.0",
+    "np": "7.2.0",
     "prettier": "2.2.1"
   },
   "peerDependencies": {
