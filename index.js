@@ -72,7 +72,7 @@ module.exports = {
     // Allows await in "for in" loops (https://github.com/airbnb/javascript/issues/851)
     'no-await-in-loop': 'off',
     'no-restricted-syntax': ['error', 'ForInStatement'],
-    'import/no-cycle': 'off',
+    'import/no-cycle': ['error', { maxDepth: '∞' }],
 
     // Enforce usage of chaining over 3 nested Lodash functions
     // https://github.com/wix/eslint-plugin-lodash/blob/master/docs/rules/chaining.md
