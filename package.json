@@ -35,21 +35,21 @@
   "homepage": "https://github.com/gowento/eslint-config-gowento",
   "dependencies": {
     "babel-eslint": "10.1.0",
-    "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "7.2.0",
-    "eslint-plugin-ava": "11.0.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-lodash": "7.1.0",
-    "eslint-plugin-prettier": "3.3.1",
-    "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-react": "7.22.0",
-    "eslint-plugin-react-hooks": "4.2.0"
+    "eslint-config-airbnb": "19.0.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-ava": "13.1.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-lodash": "7.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-promise": "5.1.1",
+    "eslint-plugin-react": "7.27.1",
+    "eslint-plugin-react-hooks": "4.3.0"
   },
   "devDependencies": {
-    "eslint": "7.18.0",
-    "np": "7.2.0",
-    "prettier": "2.2.1"
+    "eslint": "8.3.0",
+    "np": "7.6.0",
+    "prettier": "2.4.1"
   },
   "peerDependencies": {
     "eslint": "^6.1.0",
