@@ -1,7 +1,11 @@
 const prettierConfig = require('./prettier.config');
 
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
+
+  parserOptions: {
+    requireConfigFile: false,
+  },
 
   env: {
     // Enable all “ES6” features except for modules (accept ES2015 globals + set ECMAScript parser version to 6)

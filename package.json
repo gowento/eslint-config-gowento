@@ -34,7 +34,8 @@
   "license": "MIT",
   "homepage": "https://github.com/gowento/eslint-config-gowento",
   "dependencies": {
-    "babel-eslint": "10.1.0",
+    "@babel/core": "7.16.0",
+    "@babel/eslint-parser": "7.16.3",
     "eslint-config-airbnb": "19.0.1",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-ava": "13.1.0",
