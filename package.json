@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gowento",
-  "version": "8.3.1",
+  "version": "8.3.2",
   "description": "Shared ESLint config used in Gowento projects.",
   "author": "Gowento <hackers@gowento.com>",
   "contributors": [
