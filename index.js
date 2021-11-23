@@ -30,7 +30,7 @@ module.exports = {
     // Turn off ESLint's formatting rules, turn on Prettier recommended rules including React
     // https://github.com/prettier/eslint-plugin-prettier#recommended-configuration
     'plugin:prettier/recommended',
-    'prettier/react',
+    'prettier',
   ],
 
   plugins: ['ava', 'lodash', 'prettier', 'promise', 'react-hooks'],
