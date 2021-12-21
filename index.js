@@ -76,6 +76,10 @@ module.exports = {
       },
     ],
 
+    'no-promise-executor-return': 'off',
+
+    'prefer-regex-literals': 'off',
+
     'default-param-last': 'off',
 
     // Allows await in "for in" loops (https://github.com/airbnb/javascript/issues/851)
