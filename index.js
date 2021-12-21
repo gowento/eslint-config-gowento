@@ -80,6 +80,8 @@ module.exports = {
 
     'prefer-regex-literals': 'off',
 
+    camelcase: 'off',
+
     'default-param-last': 'off',
 
     // Allows await in "for in" loops (https://github.com/airbnb/javascript/issues/851)
