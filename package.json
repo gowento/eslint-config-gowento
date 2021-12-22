@@ -55,7 +55,7 @@
     "prettier": "2.5.1"
   },
   "peerDependencies": {
-    "eslint": "^6.1.0",
-    "prettier": "^1.18.2"
+    "eslint": "^8.5.0",
+    "prettier": "^2.5.1"
   }
 }
