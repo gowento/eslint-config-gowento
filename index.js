@@ -80,6 +80,8 @@ module.exports = {
 
     'prefer-regex-literals': 'off',
 
+    'promise/no-return-wrap': 'off',
+
     camelcase: 'off',
 
     'default-param-last': 'off',
