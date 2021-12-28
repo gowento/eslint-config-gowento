@@ -6,8 +6,8 @@ module.exports = {
   parserOptions: {
     requireConfigFile: false,
     babelOptions: {
-      presets: ['@babel/preset-react']
-   },
+      presets: ['@babel/preset-react'],
+    },
   },
 
   env: {
@@ -75,6 +75,12 @@ module.exports = {
         props: false,
       },
     ],
+
+    'no-promise-executor-return': 'off',
+
+    'prefer-regex-literals': 'off',
+
+    'promise/no-return-wrap': 'off',
 
     'default-param-last': 'off',
 
