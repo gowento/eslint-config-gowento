@@ -82,8 +82,6 @@ module.exports = {
 
     'promise/no-return-wrap': 'off',
 
-    camelcase: 'off',
-
     'default-param-last': 'off',
 
     // Allows await in "for in" loops (https://github.com/airbnb/javascript/issues/851)
